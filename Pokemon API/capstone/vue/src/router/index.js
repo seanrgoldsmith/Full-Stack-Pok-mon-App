@@ -64,6 +64,15 @@ const router = new Router({
       }
     },
     {
+      path: "pokemon/:name",
+      name: "poke_name",
+      // TODO: needs defined
+      // component: Poke_Name,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
       path: "/detail/:id",
       name: "detail",
       component: Detail,

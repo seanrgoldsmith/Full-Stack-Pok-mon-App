@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
-    <p>You must be authenticated to see this</p>
+    <h1>Welcome to the Pokemon API Reference Page</h1>
   </div>
 </template>
 
@@ -10,3 +9,10 @@ export default {
   name: "home"
 };
 </script>
+<style>
+.home {
+  margin-top: 75px;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -2px 2px 0 #000, 1px 1px 0 #000;
+}
+</style>

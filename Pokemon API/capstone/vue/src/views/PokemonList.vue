@@ -4,7 +4,7 @@
         
         <li class="pokeResults" v-for="pokemon in pokemonArray" :key="pokemon.id">
             <router-link class="poke_text" v-bind:to="{name: 'detail', params: {id: pokemon.id, name: pokemon.name, url: pokemon.url}}">
-                {{pokemon.name}}</router-link> 
+                {{pokemon.name}} </router-link>
         </li>
         
     </ul>
@@ -22,7 +22,7 @@ export default {
     // setup data to hold a array of Pokemon
     data() {
         return {
-            pokemonArray: []
+            pokemonArray: [],
         }
     },
     created() {
@@ -30,7 +30,7 @@ export default {
         pokemonService.getAllPokemon() // returns a promise
             .then(response => {
                 this.pokemonArray = response.data;
-            })
+            });
     }, 
     methods: {
         getNextPokemon(){

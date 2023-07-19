@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link class="nav_button" v-bind:to="{ name: 'home' }">Home</router-link>&nbsp;|&nbsp;
-      <router-link class="nav_button" v-bind:to="{name: 'pokemon'}">Pokemon</router-link>&nbsp;|&nbsp;
-      <router-link class="nav_button" v-bind:to="{ name: 'logout' }" v-if="$store.state.token != ''">Logout</router-link>
+      <router-link class="nav_button" v-bind:to="{ name: 'home' }">Home</router-link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <router-link class="nav_button" v-bind:to="{name: 'pokemon'}">Pokemon</router-link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <router-link class="nav_button" v-bind:to="{ name: 'logout' }" v-if="$store.state.token != ''">Logout</router-link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="search_bar" type="text" placeholder="Search for Pokemon">
       
       
     </div>
@@ -42,5 +43,8 @@
   color: aliceblue;
   border-radius: 15px;
   background: linear-gradient(90deg, rgb(29, 28, 36) 0%, rgb(192, 121, 40) 42%, rgba(243, 198, 0, 0.8) 91%);
+}
+#search_bar {
+  border-radius: 10px;
 }
 </style>

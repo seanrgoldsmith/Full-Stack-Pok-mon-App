@@ -12,7 +12,5 @@ public interface PokeAPIService {
     List<Pokemon> getPokemon();
 
     PokemonDetail getPokemonDetailById(int id);
-
-
-
+    List<Pokemon> getMorePokemon(int startVal, int endVal);
 }
